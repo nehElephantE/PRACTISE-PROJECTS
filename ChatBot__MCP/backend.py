@@ -99,7 +99,7 @@ async def chat_node(state: ChatState):
     response = await llm_with_tools.ainvoke(messages)
     return {"messages": [response]}
 
-
+# ToolNode is by default async....async is for || processing
 tool_node = ToolNode(tools) if tools else None
 
 # -------------------
