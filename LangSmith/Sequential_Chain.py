@@ -24,3 +24,11 @@ chain = prompt1 | model | parser | prompt2 | model | parser
 result = chain.invoke({'topic': 'Unemployment in India'})
 
 print(result)
+
+
+# .env mein LangSmith related variables define karo
+#OPEN_API_KEY
+#LANGSMITH_API
+#LANGSMITH_TRACING_V2 = TRUE...this enables the tracing
+#LANGSMITH_ENDPOINT = "url___jaahan___pr___test karna ho"
+#LANGSMITH_PROJECT = 'new_project' ...har new project ka new name define karna
