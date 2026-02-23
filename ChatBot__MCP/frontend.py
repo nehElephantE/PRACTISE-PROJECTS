@@ -89,6 +89,7 @@ if user_input:
 
             async def run_stream():
                 try:
+                    # async mein astream use karte hai ...not stream
                     async for message_chunk, metadata in chatbot.astream(
                         {"messages": [HumanMessage(content=user_input)]},
                         config=CONFIG,
