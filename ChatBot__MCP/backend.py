@@ -100,6 +100,7 @@ async def chat_node(state: ChatState):
     return {"messages": [response]}
 
 
+# ToolNode ....by default async hota hai...async is for || processing
 tool_node = ToolNode(tools) if tools else None
 
 # -------------------
